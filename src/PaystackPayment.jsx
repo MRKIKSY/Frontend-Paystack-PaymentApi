@@ -12,7 +12,7 @@ const PaystackPayment = () => {
 
     try {
       // Send the payment reference to your backend for verification
-      const response = await fetch('http://localhost:3000/verify-payment', {
+      const response = await fetch('https://backendpaystackpaymentapi.onrender.com/verify-payment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
